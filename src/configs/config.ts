@@ -1,4 +1,5 @@
 import { TypeOrmModuleOptions } from "@nestjs/typeorm";
+import { Quiz } from "src/modules/quiz/quiz.entity";
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: 'mariadb',
@@ -7,6 +8,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     username: "root",
     password: "",
     database: "quiz",
-    entities: ["dist/**/*.entity{.ts,.js}"],
+    entities: [Quiz],
+    autoLoadEntities: true,
     synchronize: true
 }

@@ -3,11 +3,9 @@ import { IsInt, IsNotEmpty, Length, Max, Min } from "class-validator"
 export class CreateQuizDto {
     @IsNotEmpty({message: "required"})
     @Length(5, 50)
-    name: string
+    title: string
 
-    @IsInt()
-    @Min(18)
-    @Max(60)
+    @Length(5, 100)
     @IsNotEmpty({message: "required"})
-    age: number
+    description: string
 }

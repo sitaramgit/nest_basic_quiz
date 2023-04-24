@@ -2,7 +2,10 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+```bash
+- Dto uses for validating the post/put request
+- entity's user for creating the table and columns 
+```
 
 ## Installation
 
