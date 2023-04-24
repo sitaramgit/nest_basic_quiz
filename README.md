@@ -71,3 +71,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## git install process
 
 $ git init
+$ git add .
